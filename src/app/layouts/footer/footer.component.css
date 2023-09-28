@@ -1,0 +1,14 @@
+footer {
+  background-color: var(--navbar-footer-color);
+  margin-top: 2%;
+}
+.site-logo{
+  padding:0.25% 3%;
+  border-radius: 20px;
+  background-color: var(--secondory-color);
+  color:var(--primary-color);
+  font-size: 1.2em;
+}
+.nav-link{
+  color: var(--primary-color);
+}

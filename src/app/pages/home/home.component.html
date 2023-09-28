@@ -1,0 +1,33 @@
+<section class="featured-section">
+  <div class="container-fluid">
+    <div class="row">
+      <div>
+        <c-carousel>
+          <c-carousel-indicators></c-carousel-indicators>
+          <c-carousel-inner>
+            <c-carousel-item *ngFor="let slide of slides">
+                <img
+                  [src]="slide.src"
+                  alt="{{ slide.title }}"
+                  class="d-block fitting"
+                  loading="lazy"/>
+            </c-carousel-item>
+          </c-carousel-inner>
+          <c-carousel-control [routerLink] caption="Previous" direction="prev"></c-carousel-control>
+          <c-carousel-control [routerLink] caption="Next" direction="next"></c-carousel-control>
+        </c-carousel>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="container mt-5">
+  <div class="col-md-12 text-center">
+    <h2> Latest Posts</h2>
+    <p>Some random text</p>
+  </div>
+  <div class="row">
+    <div>
+      <app-post-card></app-post-card>
+    </div>
+  </div>
+</section>

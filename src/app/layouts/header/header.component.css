@@ -1,0 +1,13 @@
+header{
+  /*height:7%;*/
+}
+.site-logo{
+  padding: 5px 20px;
+  border-radius:20px;
+  background-color: var(--secondory-color);
+  color: var(--primary-color);
+}
+@media (max-width: 992px) {
+  background-color: transparent;
+  margin-bottom: 15px;
+}
